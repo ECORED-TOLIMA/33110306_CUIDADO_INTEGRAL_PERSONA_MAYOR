@@ -1,18 +1,38 @@
 @use 'variables' as *
+// Los distintivos van anclados a la ILUSTRACIÓN, no a la columna: el kit los pone en absoluto
+// contra la columna, que es más ancha y más alta, y así no hay forma de sujetarlos.
+//
+// La caja de referencia tiene que ser EXACTAMENTE la de la imagen: los distintivos van
+// en absoluto, que además los saca del cálculo del alto de la fila (con `margin-bottom` sobre
+// un elemento de rejilla, subir el distintivo estiraba la fila y la imagen bajaba con él).
+//   ilustración: 535x525 en (855,111)
+//   distintivo 1: 136x127 en (1215,184) -> 360 desde la izquierda,  73 desde arriba
+//   distintivo 2: 138x140 en (861,490) ->    6 desde la izquierda, 379 desde arriba
+.banner-principal__img
+  position: relative
+  // El kit le da 3rem de relleno ARRIBA y a la DERECHA. El de arriba se puede pasar a margen
+  // (así la caja de relleno mide de alto lo que la imagen); el de la derecha lo impone una regla
+  // del kit con `!important` que no se deja pisar, de modo que la caja sigue siendo 3rem más
+  // ancha que la imagen. Por eso el ANCHO de los distintivos se calcula restándolo.
+  padding-top: 0 !important
+  margin-top: 3rem
+  > img
+    display: block
+    width: 100%
+
 .banner-principal-decorativo
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
-    position: absolute
-    top: 68%
-    left: -10%
-    width: 20%
+    position: absolute !important
+    left: calc((100% - 3rem) * 0.673)
+    top: 13.9%
+    width: calc((100% - 3rem) * 0.254)
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
-    position: absolute
-    top: 30%
-    right: 10%
-    width: 20%
-
+    position: absolute !important
+    left: calc((100% - 3rem) * 0.011)
+    top: 72.2%
+    width: calc((100% - 3rem) * 0.258)
 
 @keyframes float1
   0%
@@ -21,16 +41,22 @@
   100%
     transform: translateY(0px)
 
+// El ancho de la columna del texto lo fija el `frame.width` del párrafo del XD: 490 px dentro de
+// una tarjeta de 1328. Con el 58,33 % del scaffold rompía a 710 y el titular cabía en dos líneas
+// en vez de las tres del diseño. 490 + los 3rem de `ps-sm-5` = 538, o sea el 40,5 % de 1328.
 .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
   flex: 0 0 auto !important
-  width: 58.33333333% !important
+  width: 40.5% !important
 .banner-principal__img 
   padding-bottom: 0 !important;
 //.banner-principal__row .banner-principal__img 
 //    width: 33%;
     
+// El scaffold viene de un curso con el banner OSCURO y fuerza el texto a blanco. Aquí el banner
+// es el tan `#EED2B9` y el XD pinta el titular y el párrafo en `#12263F`: sobre ese fondo, en
+// blanco, no se leen. El botón «Ver más» sí lleva el texto blanco, y eso lo pone el kit.
 .banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $white !important  
+  color: $color-sistema-texto !important
 
 .boton *, .boton--sm *,
 .barra-avance__boton--regresar span
