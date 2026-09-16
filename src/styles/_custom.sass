@@ -405,3 +405,29 @@ figcaption
     margin-inline: 0
     padding-inline: 0
     background-image: none
+
+.banda-t11-1, .banda-t11-2
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  margin-inline: -3rem
+  padding: 2rem 3rem
+  @media (max-width: $bp-max-md)
+    margin-inline: 0
+    padding-inline: 0
+    background-image: none
+.banda-t11-1
+  background-image: url(../assets/curso/temas/t11/banda-1.png)
+.banda-t11-2
+  background-image: url(../assets/curso/temas/t11/banda-2.png)
+.lista-ul--vineta-t11 li
+  list-style: none
+  padding-left: 2.2em
+  text-indent: -2.2em
+  &:before
+    content: ''
+    display: inline-block
+    width: 22px
+    height: 21px
+    margin-right: 1em
+    vertical-align: -4px
+    background: url(../assets/curso/temas/t11/vin.svg) no-repeat center / contain
