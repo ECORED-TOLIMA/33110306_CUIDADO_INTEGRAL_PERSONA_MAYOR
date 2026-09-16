@@ -42,7 +42,7 @@
     .row.mt-4
       .col-lg-6.mb-4.mb-lg-0
         figure.mb-0
-          img(src="@/assets/curso/temas/t3/foto-2.png").w-100
+          img(src="@/assets/curso/temas/t3/foto-2.png").w-100.r-20
         .bg-3.p-4.posicion-icono
           figure.mb-0.posicion-icono__ic
             img(src="@/assets/curso/temas/t3/ic-1.svg" style="width: 100px")
@@ -51,7 +51,7 @@
           p.mb-0 Relacionadas con el cuidado personal y las necesidades esenciales, como alimentarse, bañarse, vestirse, realizar el aseo personal, desplazarse y utilizar el sanitario.
       .col-lg-6
         figure.mb-0
-          img(src="@/assets/curso/temas/t3/foto-3.png").w-100
+          img(src="@/assets/curso/temas/t3/foto-3.png").w-100.r-20
         .bg-3.p-4.posicion-icono
           figure.mb-0.posicion-icono__ic
             img(src="@/assets/curso/temas/t3/ic-2.svg" style="width: 100px")
@@ -132,7 +132,7 @@
     p.mt-4(data-aos="fade-right") Una vez reconocido el tipo y nivel de dependencia, el siguiente paso en el proceso de cuidado consiste en identificar las necesidades particulares de la persona mayor. Esta identificación debe considerar diferentes dimensiones de su vida, incluyendo aspectos físicos, emocionales, sociales y ambientales, con el propósito de orientar las acciones de cuidado de acuerdo con sus capacidades, preferencias y condiciones particulares.
 
     figure.mt-4(data-aos="fade-up")
-      img(src="@/assets/curso/temas/t3/foto-4.png").w-100
+      img(src="@/assets/curso/temas/t3/foto-4.png").w-100.r-16
 
     p.mt-4(data-aos="fade-right") Las necesidades pueden variar según el estado de salud, el nivel de funcionalidad, el entorno, las relaciones familiares y las redes de apoyo disponibles. Por esta razón, la valoración debe realizarse de manera individualizada, evitando generalizaciones basadas únicamente en la edad o en la presencia de una condición de salud.
 

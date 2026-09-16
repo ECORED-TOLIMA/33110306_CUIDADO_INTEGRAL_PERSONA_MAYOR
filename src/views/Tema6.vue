@@ -74,9 +74,11 @@
     .row.align-items-stretch.mt-4
       .col-lg-8.mb-4.mb-lg-0
         .bg-2-vc.p-4.h-100(data-aos="fade-right")
-          .bg-3.d-inline-block.px-3.py-1.mb-3
-            p.mb-0
-              b Prevención de caídas
+          .row.mb-3
+            .col-auto
+              .bg-3.px-3.py-1
+                p.mb-0
+                  b Prevención de caídas
           p Las caídas constituyen uno de los principales riesgos asociados al entorno de la persona mayor. Su prevención requiere considerar factores relacionados tanto con la persona como con el espacio en el que se desplaza.
           .row.align-items-start
             .col-12.col-md-auto.mb-3.mb-md-0

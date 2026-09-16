@@ -20,7 +20,7 @@
     p.mt-4(data-aos="fade-right") En el cuidado domiciliario o institucional, estas medidas deben aplicarse de manera constante, especialmente cuando existe contacto con sangre, secreciones, excreciones, mucosas, piel lesionada, objetos contaminados o superficies que puedan contener microorganismos.
 
     figure.mt-4(data-aos="fade-up")
-      img(src="@/assets/curso/temas/t7/foto-1.png").w-100
+      img(src="@/assets/curso/temas/t7/foto-1.png").w-100.r-16
 
     p.mt-4(data-aos="fade-right") La bioseguridad no se limita al uso de elementos de protección personal. También incluye la higiene de manos, la limpieza y desinfección, el manejo seguro de residuos, el uso adecuado de barreras de protección y la identificación de los riesgos presentes durante cada actividad.
 

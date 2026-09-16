@@ -78,7 +78,7 @@
     .row.mt-4
       .col-lg-5.mb-4.mb-lg-0
         figure.mb-0
-          img(src="@/assets/curso/temas/t4/foto-1.png").w-100
+          img(src="@/assets/curso/temas/t4/foto-1.png").w-100.r-10
       .col-lg-7
         .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 El cuidador debe conocer el estado habitual de la persona mayor para poder identificar modificaciones significativas. Ante un cambio repentino, debe mantener la seguridad de la persona, evitar dejarla sola, informar oportunamente al responsable de su atención y solicitar valoración por parte del personal de salud cuando sea necesario. El cuidador no debe intentar establecer la causa del cambio ni realizar procedimientos para los cuales no está capacitado.

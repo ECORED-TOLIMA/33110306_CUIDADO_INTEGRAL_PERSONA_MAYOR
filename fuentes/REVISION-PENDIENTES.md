@@ -25,3 +25,11 @@ quedan a la espera de un material que todavía no llegó.
 4. **El PDF del menú «Descargar PDF» lo pone el cliente.** El scaffold apuntaba a
    `downloads/dist.pdf`, que no existe. El menú ya apunta a `downloads/33110306_CF01_CFA_DU.pdf`
    siguiendo la convención de los otros entregables; falta el fichero.
+
+5. **La actividad — las diez imágenes.** El `_AD.docx` no trae imágenes y el `.xd` no tiene
+   artboard de actividad. Se construyeron con el lenguaje gráfico del propio curso: las diez
+   composiciones que el XD dibuja en los temas —persona recortada sobre la placa lila con la
+   forma tan, los corazones rosas y el galón azul— recortadas a cuadrado de 396x396. Las diez
+   son distintas y todas las personas salen de este `.xd` (tiene trece recortes sobre fondo
+   transparente en `resources/`), así que no se tomó nada de otro entregable.
+
