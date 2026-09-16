@@ -280,3 +280,33 @@ figcaption
       gap: .75rem
   &.arriba .tarjeta-slide__img
     bottom: 66px
+
+// El cuadrado amarillo del icono va montado sobre la unión de la foto y la caja: el XD lo
+// dibuja de 100x100 a caballo entre las dos (y=1704, con la caja arrancando en 1804).
+.posicion-icono
+  position: relative
+  padding-top: 3.5rem !important
+.posicion-icono__ic
+  position: absolute
+  top: -50px
+  left: 2rem
+
+// `tarjeta--container`: el XD no reparte el ancho a partes iguales (405/419/405) y fija el alto.
+.tarjeta--container
+  > .tarjeta:first-child, > .tarjeta:last-child
+    flex-grow: .97
+  > .tarjeta
+    border-radius: 0
+  > .tarjeta:first-child
+    border-radius: 20px 0 0 20px
+  > .tarjeta:last-child
+    border-radius: 0 20px 20px 0
+  > .tarjeta
+    @media (min-width: $bp-min-lg)
+      min-height: var(--alto-tarjeta, auto)
+  @media (max-width: $bp-max-md)
+    > .tarjeta, > .tarjeta:first-child, > .tarjeta:last-child
+      border-radius: 20px
+      margin-bottom: 1rem
+    > .tarjeta:last-child
+      margin-bottom: 0
