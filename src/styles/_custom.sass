@@ -179,3 +179,50 @@ figcaption
   &:before
     height: 8px
     background-color: $color-secundario // pestaña #C7D0FE
+
+// La cabecera de la tabla del XD es `#FFFCEC` con un filete de 5 px en `#FEE85B` por encima.
+.tabla-a
+  thead th
+    border-top: 5px solid $color-acento-contenido
+
+// `bloque-texto-g` con la franja en 1-VO: el 1.4 la dibuja de 919x350 en `#754114` con la caja
+// blanca de 685x262 encima y la foto de 614x350 saliéndose por la izquierda.
+.bloque-texto-g.color-1-vo
+  background-color: $color-1-vo
+
+// Bandas decorativas que el XD pone tras los dos carruseles del tema 1. Ocupan el ancho COMPLETO
+// de la tarjeta (1328), o sea 3 rem por fuera del padding del contenido. Se exportan por GRUPO:
+// con `--rect` el recorte se lleva las tarjetas y su texto.
+.banda-1, .banda-2
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  margin-inline: -3rem
+  padding: 2rem 3rem
+  @media (max-width: $bp-max-md)
+    margin-inline: 0
+    padding-inline: 0
+    background-image: none
+.banda-1
+  background-image: url(../assets/curso/temas/t1/banda-1.png)
+.banda-2
+  background-image: url(../assets/curso/temas/t1/banda-2.png)
+
+// Las flechas del SlyderF van en el acento de botón del XD (#9E0909), no en el gris del kit.
+.slyder--flechas
+  .slyder-f__btn i
+    color: $color-acento-botones
+
+// `LineaTiempoD`: el XD pinta el numeral y las filas cerradas en #FFE1E1, el numeral activo en
+// #9E0909 y el cuerpo abierto en #E2EAFF, todo con r=5. El kit los deja en gris.
+.linea-tiempo-d.color-1
+  .linea-tiempo-d__item__number,
+  .linea-tiempo-d__item__content
+    background-color: $color-4-vc      // #FFE1E1 en reposo
+    color: $color-sistema-texto
+    border-radius: 5px
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__number
+      background-color: $color-acento-botones   // #9E0909
+      color: $white
+    .linea-tiempo-d__item__content
+      background-color: $color-2-vc    // #E2EAFF el ítem abierto
