@@ -310,3 +310,17 @@ figcaption
       margin-bottom: 1rem
     > .tarjeta:last-child
       margin-bottom: 0
+
+// Las viñetas de esta lista son el pictograma amarillo de 22x21 que dibuja el XD, no un punto.
+.lista-ul--vineta li
+  list-style: none
+  padding-left: 2.2em
+  text-indent: -2.2em
+  &:before
+    content: ''
+    display: inline-block
+    width: 22px
+    height: 21px
+    margin-right: 1em
+    vertical-align: -4px
+    background: url(../assets/curso/temas/t4/vin.svg) no-repeat center / contain
