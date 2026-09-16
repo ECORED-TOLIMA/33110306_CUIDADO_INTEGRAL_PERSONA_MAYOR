@@ -130,3 +130,52 @@ figcaption
 
   
  
+
+// ============================================================================
+// La paleta del curso como clases de fondo. Los valores salen de `_variables.sass`, que lleva
+// la carta de color de la portada leída del `fill` de cada rect: no se remapea nada.
+// ============================================================================
+.bg-1
+  background-color: $color-primario    // 1     #EED2B9
+.bg-1-vc
+  background-color: $color-1-vc        // 1-VC  #F3E5D8
+.bg-1-v
+  background-color: $color-1-v         // 1-V   #D1AF91
+.bg-2
+  background-color: $color-secundario  // 2     #C7D0FE
+.bg-2-vc
+  background-color: $color-2-vc        // 2-VC  #E2EAFF
+.bg-2-v
+  background-color: $color-2-v         // 2-V   #A1B4FF
+.bg-3
+  background-color: $color-acento-contenido // 3  #FEE85B
+.bg-3-vc
+  background-color: $color-3-vc        // 3-VC  #FFFCEC
+.bg-3-v
+  background-color: $color-3-v         // 3-V   #FEF79D
+.bg-4
+  background-color: $color-acento-botones   // 4  #9E0909
+.bg-4-vc
+  background-color: $color-4-vc        // 4-VC  #FFE1E1
+.bg-5
+  background-color: $color-5-t         // 5-T   #FC9EDD
+.bg-5-tc
+  background-color: $color-5-tc        // 5-TC  #FEE1F7
+
+// Radios sueltos: el `.xd` los da por rect, esquina por esquina.
+.r-0
+  border-radius: 0 !important
+.r-5
+  border-radius: 5px !important
+.r-10
+  border-radius: 10px !important
+.r-20
+  border-radius: 20px !important
+
+// El `.cajon` del kit aclara el color del modificador; aquí el cuerpo y la pestaña llevan el
+// `fill` EXACTO del rect del XD. La pestaña mide 25x8.
+.cajon.color-2
+  background-color: $color-2-vc        // cuerpo   #E2EAFF
+  &:before
+    height: 8px
+    background-color: $color-secundario // pestaña #C7D0FE
