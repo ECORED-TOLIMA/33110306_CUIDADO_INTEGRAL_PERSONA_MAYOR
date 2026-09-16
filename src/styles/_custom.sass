@@ -226,3 +226,57 @@ figcaption
       color: $white
     .linea-tiempo-d__item__content
       background-color: $color-2-vc    // #E2EAFF el ítem abierto
+
+.cajon.color-1
+  background-color: $color-1-vc        // cuerpo   #F3E5D8
+  &:before
+    height: 8px
+    background-color: $color-primario  // pestaña  #EED2B9
+
+// `AcordionA` tipo a: el XD pinta el botón como un círculo rojo (#9E0909) a la izquierda del
+// título, las filas cerradas en #FFE1E1 con r=10 y el cuerpo abierto en #E2EAFF.
+// El color de la tarjeta va por la prop `clase-tarjeta`, no por CSS: `cardClass()` pone
+// `tarjeta tarjeta--blanca` cuando la prop viene vacía y habría que pelear con `!important`.
+.acordion-tarjeta--curso
+  background-color: $color-4-vc        // #FFE1E1 cerrado
+  border-radius: 10px
+.acordion--curso
+  .acordion__item--activo, .acordion__activo
+    background-color: $color-2-vc !important   // #E2EAFF abierto
+  .acordion__accion__btn--a, .acordion__accion__btn--b
+    background-color: $color-acento-botones
+    color: $white
+    width: 40px
+    height: 40px
+    min-width: 40px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 1.1rem
+
+// Tarjeta con la foto y la franja que se desliza (`t10/Tarjetas_animadas` del catálogo). El kit
+// deja la imagen tapando la tarjeta entera y la descubre al pasar el ratón; el XD deja SIEMPRE
+// visible una franja #FFE1E1 de 396x66 con el término y el botón, y enseña la definición al
+// pasar. Se consigue subiendo el borde inferior de la imagen 66 px y colocando el contenido en
+// columna con el título abajo, dentro de esa franja.
+.tarjeta-slide.color-curso
+  // El XD fija la tarjeta en 396x313 (foto 247 + franja 66). Sin el alto, la definición más
+  // larga estira su tarjeta y las franjas de una misma fila dejan de alinearse.
+  height: 313px
+  .tarjeta-slide__contenido
+    background-color: $color-4-vc
+    height: 100%
+    // `column-reverse`: el `h4` es el primero del DOM y así queda ABAJO, dentro de la franja
+    // que la imagen deja abierta; el párrafo se apila encima y sólo asoma al pasar el ratón.
+    display: flex
+    flex-direction: column-reverse
+    justify-content: flex-start
+    h4
+      margin-bottom: 0
+      min-height: 66px
+      display: flex
+      align-items: center
+      gap: .75rem
+  &.arriba .tarjeta-slide__img
+    bottom: 66px
