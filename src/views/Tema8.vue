@@ -13,7 +13,7 @@
           img(src="@/assets/curso/temas/t8/comp-1.png").w-100
       .col-lg-8
         p(data-aos="fade-left") La higiene corporal de la persona mayor contribuye a mantener la limpieza, proteger la integridad de la piel, prevenir infecciones y favorecer el bienestar y la comodidad. Además, constituye una oportunidad para observar el estado general de la persona e identificar cambios que puedan requerir atención.
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 El cuidado cefalocaudal consiste en realizar la higiene corporal siguiendo un orden organizado, desde la cabeza hacia los pies. Esta secuencia facilita el desarrollo sistemático del procedimiento, evita omisiones y contribuye a disminuir el riesgo de contaminación cruzada.
         p.mt-4.mb-0(data-aos="fade-left") Durante este cuidado es fundamental respetar la privacidad, la dignidad y las capacidades de la persona mayor, promoviendo su participación en aquellas actividades que pueda realizar por sí misma.
 
@@ -25,7 +25,7 @@
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 Entre sus principales objetivos se encuentran:
 
     .banda-t8.mt-4
@@ -153,22 +153,60 @@
 
     p.mt-4(data-aos="fade-right") Durante el cuidado cefalocaudal es necesario adoptar medidas que permitan realizar la higiene de manera segura, respetuosa y acorde con las condiciones de la persona mayor. Las precauciones deben considerar tanto la seguridad física como la protección de la piel, la prevención de infecciones y el bienestar de la persona.
 
+    //- DIEZ tarjetas: el XD dibuja tres en la mesa y deja las otras SIETE en el pasteboard,
+    //- que es donde viven los estados no visibles de un carrusel. Yo maqueté sólo las tres
+    //- visibles — hallazgos 32 y 37 del revisor («carrusel incompleto», «tarjetas 7 / 10»).
     SlyderF.slyder--flechas.mt-4(columnas="col-md-6 col-lg-4")
       .tarjeta.bg-1-vc.r-20.p-4.h-100
         figure.mb-3
-          img(src="@/assets/curso/temas/t8/pre-1.svg" style="width: 128px").m-auto
+          img(src="@/assets/curso/temas/t8/pre-1.png" style="width: 128px").m-auto
         h4.text-center Proteger la privacidad y dignidad
         p.text-center.mb-0 Mantener cubierta la parte del cuerpo que no se esté aseando, explicar cada acción y respetar las preferencias de la persona mayor.
       .tarjeta.bg-1-vc.r-20.p-4.h-100
         figure.mb-3
-          img(src="@/assets/curso/temas/t8/pre-2.svg" style="width: 128px").m-auto
+          img(src="@/assets/curso/temas/t8/pre-2.png" style="width: 128px").m-auto
         h4.text-center Evitar riesgos de caídas
         p.text-center.mb-0 Mantener el espacio libre de obstáculos, asegurar una superficie estable y no dejar sola a la persona cuando requiera asistencia para movilizarse.
       .tarjeta.bg-1-vc.r-20.p-4.h-100
         figure.mb-3
-          img(src="@/assets/curso/temas/t8/pre-3.svg" style="width: 128px").m-auto
+          img(src="@/assets/curso/temas/t8/pre-3.png" style="width: 128px").m-auto
         h4.text-center Controlar la temperatura del agua
         p.text-center.mb-0 Utilizar agua tibia y comprobar que sea adecuada antes de entrar en contacto con la piel.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-4.png" style="width: 128px").m-auto
+        h4.text-center Prevenir lesiones
+        p.text-center.mb-0 Realizar movimientos suaves y evitar fricciones excesivas, especialmente en personas con piel frágil, dolor o limitaciones de movilidad.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-5.png" style="width: 128px").m-auto
+        h4.text-center Proteger la integridad de la piel
+        p.text-center.mb-0 Prestar especial atención a pliegues, zonas de presión, enrojecimientos, heridas o áreas con humedad.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-6.png" style="width: 128px").m-auto
+        h4.text-center Aplicar medidas de bioseguridad
+        p.text-center.mb-0 Realizar higiene de manos, utilizar los elementos de protección personal cuando exista riesgo de exposición y emplear materiales limpios.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-7.png" style="width: 128px").m-auto
+        h4.text-center Evitar la contaminación cruzada
+        p.text-center.mb-0 Respetar la secuencia cefalocaudal, utilizar materiales adecuados y realizar la higiene de las zonas con mayor riesgo de contaminación al final.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-8.png" style="width: 128px").m-auto
+        h4.text-center Tener precaución con dispositivos médicos
+        p.text-center.mb-0 Evitar movimientos o manipulaciones que puedan desplazarlos o afectar su funcionamiento.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-9.png" style="width: 128px").m-auto
+        h4.text-center Promover la participación
+        p.text-center.mb-0 Permitir que la persona mayor realice por sí misma las actividades que pueda desarrollar, brindando únicamente el apoyo que necesite.
+      .tarjeta.bg-1-vc.r-20.p-4.h-100
+        figure.mb-3
+          img(src="@/assets/curso/temas/t8/pre-10.png" style="width: 128px").m-auto
+        h4.text-center Revisar el estado general
+        p.text-center.mb-0 Prestar atención a cambios en la piel, dolor, mareo, fatiga, dificultad respiratoria u otras alteraciones durante el procedimiento y comunicar los hallazgos relevantes.
 
     .row.justify-content-center.mt-4
       .col-lg-10

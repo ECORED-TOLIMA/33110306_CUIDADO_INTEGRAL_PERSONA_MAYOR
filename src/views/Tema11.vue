@@ -146,7 +146,7 @@
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 Entre las características de una dieta balanceada se encuentran:
 
     .row.align-items-center.mt-4
@@ -179,7 +179,7 @@
     .row.mt-4
       .col-lg-7.mb-4.mb-lg-0
         p(data-aos="fade-right") También es importante considerar la textura y consistencia de los alimentos. Cuando una persona presenta dificultades para masticar o deglutir, la preparación puede requerir modificaciones para facilitar la alimentación y disminuir riesgos. Estas modificaciones deben realizarse de acuerdo con las orientaciones de los profesionales responsables del cuidado.
-        .bg-1-vc.p-4(data-aos="fade-right")
+        .cajon.color-1.p-4(data-aos="fade-right")
           p.mb-0 La presentación y el ambiente durante la alimentación también pueden favorecer una experiencia agradable. Mantener una postura adecuada, disponer los alimentos de manera accesible y respetar el ritmo y las preferencias de la persona contribuye a su participación y autonomía.
         p.mt-4.mb-0(data-aos="fade-right") En este proceso, el cuidador debe apoyar sin sustituir innecesariamente las capacidades de la persona mayor. Puede colaborar en la selección y preparación de los alimentos, disponerlos de manera adecuada, facilitar los elementos necesarios y acompañar durante la alimentación, de acuerdo con el nivel de dependencia.
       .col-lg-5
@@ -317,13 +317,13 @@
           img(src="@/assets/curso/temas/t11/ilus-5.png").w-100
       .col-lg-7
         p(data-aos="fade-left") Las fórmulas nutricionales son productos que aportan energía y nutrientes de manera concentrada. Pueden utilizarse como complemento de la alimentación habitual cuando la persona mayor no logra cubrir sus necesidades nutricionales mediante los alimentos, de acuerdo con la valoración y las indicaciones de los profesionales responsables.
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 En la persona mayor, pueden considerarse en situaciones como bajo peso, deficiencia nutricional o dificultad para cubrir los requerimientos de energía y nutrientes mediante la alimentación habitual. Su uso debe responder a las necesidades particulares de cada persona.
         p.mt-4.mb-0(data-aos="fade-left") Es importante tener en cuenta que las fórmulas nutricionales no son iguales para todas las personas. Su composición, cantidad y forma de utilización dependen de las necesidades identificadas y de las indicaciones establecidas.
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 Cuando una fórmula ha sido indicada, el cuidador debe:
 
     .row.mt-4
@@ -412,7 +412,7 @@
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 Durante la preparación de los alimentos es importante tener en cuenta:
 
     .row.align-items-center.mt-4
@@ -522,13 +522,15 @@
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 Algunas señales que requieren atención durante o después de la alimentación son:
 
-    .row.justify-content-center.mt-4
-      .col-lg-8
-        .bg-2-vc.p-4(data-aos="fade-up")
-          ol.lista-ol--cuadro.mb-0
+    //- El XD pone la caja de 500x329 en (290,11085) y la foto de 486x316 en (817,11091) a su
+    //- derecha: dos columnas de 5 dentro de las 10 centradas, no una sola de 8.
+    .row.justify-content-center.align-items-center.mt-4
+      .col-lg-5.mb-4.mb-lg-0
+        .bg-2-vc.p-4.h-100(data-aos="fade-right")
+          ol.lista-ol--cuadro.lista-ol--separador.mb-0
             li
               .lista-ol--cuadro__vineta
                 span 1
@@ -549,6 +551,9 @@
               .lista-ol--cuadro__vineta
                 span 5
               | Cambios importantes en el estado general.
+      .col-lg-5
+        figure.mb-0
+          img(src="@/assets/curso/temas/t11/foto-degl.png").w-100.r-10
 
     p.mt-4(data-aos="fade-right") Ante estas situaciones, se debe actuar de acuerdo con los protocolos establecidos y comunicar oportunamente al profesional correspondiente.
 

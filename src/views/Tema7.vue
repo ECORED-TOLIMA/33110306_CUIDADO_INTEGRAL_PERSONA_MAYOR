@@ -31,8 +31,8 @@
     p.mt-4(data-aos="fade-right") La bioseguridad comprende las medidas y prácticas que permiten prevenir riesgos para la salud durante las actividades de cuidado. Su aplicación busca proteger a la persona mayor, al cuidador y a otras personas del entorno frente a la posible exposición a microorganismos y sustancias que puedan causar daño.
 
     //- Caja #C7D0FE con la lista de viñetas amarillas y el panel de la ilustración al lado.
-    .row.align-items-stretch.mt-4
-      .col-lg-7.mb-4.mb-lg-0
+    .row.align-items-stretch.g-0.mt-4
+      .col-lg-8.mb-4.mb-lg-0
         .bg-2.p-4.h-100(data-aos="fade-right")
           p.mb-3
             b En el cuidado cotidiano, la bioseguridad tiene como objetivos:
@@ -42,50 +42,18 @@
             li Mantener condiciones adecuadas de higiene y limpieza en el entorno y los elementos utilizados.
             li Promover prácticas seguras en la manipulación de residuos, ropa y materiales.
             li.mb-0 Proteger tanto a la persona mayor como al cuidador durante las actividades que impliquen algún riesgo de contaminación.
-      .col-lg-5
+      .col-lg-4
         figure.mb-0.h-100
           img(src="@/assets/curso/temas/t7/ilus-1.png").w-100.h-100.object-fit-cover
 
     p.mt-4(data-aos="fade-right") Para cumplir estos objetivos, la bioseguridad se fundamenta en principios que orientan la actuación del cuidador.
 
-    //- Cinco principios con su foto: el XD dibuja el primero y marca «1/5»; los otros cuatro
-    //- están en el pasteboard.
-    SlyderA.mt-4(tipo="b")
-      .row.align-items-center
-        .col-lg-4.mb-4.mb-lg-0
-          h4 Universalidad
-          p.mb-0 Las medidas básicas de protección deben aplicarse de manera habitual, independientemente de que la persona mayor tenga o no una infección identificada. Esto permite prevenir la exposición a microorganismos que pueden estar presentes sin ser visibles.
-        .col-lg-8
-          figure.mb-0
-            img(src="@/assets/curso/temas/t7/pri-1.png").w-100
-      .row.align-items-center
-        .col-lg-4.mb-4.mb-lg-0
-          h4 Prevención
-          p.mb-0 Antes de realizar una actividad, el cuidador debe identificar los posibles riesgos y adoptar las medidas necesarias para reducirlos. La prevención implica preparar el espacio, disponer de los materiales requeridos y utilizar las medidas de protección que correspondan.
-        .col-lg-8
-          figure.mb-0
-            img(src="@/assets/curso/temas/t7/pri-2.png").w-100
-      .row.align-items-center
-        .col-lg-4.mb-4.mb-lg-0
-          h4 Barreras de protección
-          p.mb-0 Los elementos de protección personal funcionan como una barrera entre el cuidador y las posibles fuentes de contaminación. Su utilización depende del tipo de actividad y del riesgo de exposición.
-        .col-lg-8
-          figure.mb-0
-            img(src="@/assets/curso/temas/t7/pri-3.png").w-100
-      .row.align-items-center
-        .col-lg-4.mb-4.mb-lg-0
-          h4 Higiene
-          p.mb-0 La higiene de manos, la limpieza del entorno y el manejo adecuado de los elementos utilizados durante el cuidado son acciones fundamentales para reducir la transmisión de microorganismos.
-        .col-lg-8
-          figure.mb-0
-            img(src="@/assets/curso/temas/t7/pri-4.png").w-100
-      .row.align-items-center
-        .col-lg-4.mb-4.mb-lg-0
-          h4 Manejo seguro de materiales y residuos
-          p.mb-0 Los materiales que hayan estado en contacto con fluidos corporales deben manipularse de manera que se evite la contaminación de las manos, la ropa, las superficies y otras personas.
-        .col-lg-8
-          figure.mb-0
-            img(src="@/assets/curso/temas/t7/pri-5.png").w-100
+    //- Cinco principios con su foto. El XD dibuja el primero con el contador «1/5» y una sola
+    //- flecha roja, texto a la izquierda y foto a la derecha, todo sobre un panel #E2EAFF de
+    //- 1228x440 con las esquinas CUADRADAS; los otros cuatro están en el pasteboard. Ese
+    //- contador es `SlyderB`, no `SlyderA`: `SlyderA` sólo tiene bullets (tipos a y b).
+    .bg-2-vc.p-4.p-md-5.mt-4(data-aos="fade-up")
+      SlyderB(:datos="principios")
 
     p.mt-4(data-aos="fade-right") La aplicación de estos principios debe realizarse de manera constante y de acuerdo con el riesgo presente en cada actividad. La bioseguridad no consiste únicamente en utilizar elementos de protección personal; también requiere mantener hábitos de higiene, reconocer situaciones de riesgo y actuar de manera preventiva.
 
@@ -177,7 +145,44 @@
 <script>
 export default {
   name: 'Tema7',
-  data: () => ({}),
+  data: () => ({
+    // `SlyderB` resuelve la ruta él solo con `require_src` (`resolverImagen`), así que aquí
+    // va la CADENA `@/assets/...`. Con `require(...)` —sintaxis de webpack— Vite no compila
+    // el componente y el slider se monta con CERO diapositivas, sin error visible en la
+    // página: `.slyder-b__slyde` devolvía 0 y el hueco quedaba en blanco.
+    principios: [
+      {
+        titulo: 'Universalidad',
+        texto:
+          'Las medidas básicas de protección deben aplicarse de manera habitual, independientemente de que la persona mayor tenga o no una infección identificada. Esto permite prevenir la exposición a microorganismos que pueden estar presentes sin ser visibles.',
+        imagen: '@/assets/curso/temas/t7/pri-1.png',
+      },
+      {
+        titulo: 'Prevención',
+        texto:
+          'Antes de realizar una actividad, el cuidador debe identificar los posibles riesgos y adoptar las medidas necesarias para reducirlos. La prevención implica preparar el espacio, disponer de los materiales requeridos y utilizar las medidas de protección que correspondan.',
+        imagen: '@/assets/curso/temas/t7/pri-2.png',
+      },
+      {
+        titulo: 'Barreras de protección',
+        texto:
+          'Los elementos de protección personal funcionan como una barrera entre el cuidador y las posibles fuentes de contaminación. Su utilización depende del tipo de actividad y del riesgo de exposición.',
+        imagen: '@/assets/curso/temas/t7/pri-3.png',
+      },
+      {
+        titulo: 'Higiene',
+        texto:
+          'La higiene de manos, la limpieza del entorno y el manejo adecuado de los elementos utilizados durante el cuidado son acciones fundamentales para reducir la transmisión de microorganismos.',
+        imagen: '@/assets/curso/temas/t7/pri-4.png',
+      },
+      {
+        titulo: 'Manejo seguro de materiales y residuos',
+        texto:
+          'Los materiales que hayan estado en contacto con fluidos corporales deben manipularse de manera que se evite la contaminación de las manos, la ropa, las superficies y otras personas.',
+        imagen: '@/assets/curso/temas/t7/pri-5.png',
+      },
+    ],
+  }),
 }
 </script>
 

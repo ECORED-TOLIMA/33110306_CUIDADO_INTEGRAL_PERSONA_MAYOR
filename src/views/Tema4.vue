@@ -16,7 +16,7 @@
         figure.mb-0
           img(src="@/assets/curso/temas/t4/comp-1.png").w-100
       .col-lg-8
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 El nivel de conciencia puede variar temporalmente debido a diferentes situaciones, como alteraciones del sueño, efectos de medicamentos, enfermedades, infecciones, cambios metabólicos, lesiones u otras condiciones que afecten el funcionamiento del organismo. Por esta razón, el cuidador debe conocer las características generales de los diferentes niveles y prestar atención a cambios respecto al estado habitual de la persona.
         p.mt-4.mb-0(data-aos="fade-left") La valoración del estado de conciencia debe realizarse mediante la observación de aspectos como el nivel de alerta, la capacidad para responder a estímulos, la orientación y la interacción con el entorno. El cuidador no establece diagnósticos, pero sí puede reconocer cambios significativos y comunicarlos oportunamente al personal de salud o a la persona responsable de la atención.
 
@@ -58,7 +58,7 @@
         p.text-center.mb-0 Corresponde a un estado profundo de pérdida de conciencia en el que la persona no puede despertarse y no presenta respuestas voluntarias adecuadas ante estímulos externos.
 
     //- Caja #A1B4FF de 728x276 con la lista de viñetas amarillas y el panel #F3F9FF de 499x276.
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-7.mb-4.mb-lg-0
         .bg-2-v.p-4.h-100(data-aos="fade-right")
           p.mb-3

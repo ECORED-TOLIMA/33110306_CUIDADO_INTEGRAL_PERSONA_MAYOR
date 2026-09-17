@@ -15,7 +15,7 @@
           img(src="@/assets/curso/temas/t1/comp-1.png").w-100
       .col-lg-8
         p(data-aos="fade-left") El cuidado de la persona mayor no se limita a una práctica asistencial, sino que se fundamenta en principios constitucionales, normas legales y políticas públicas vigentes en Colombia. Estas disposiciones establecen un marco de protección que orienta las acciones del cuidador y garantizan pilares fundamentales en la atención, tales como la protección, la dignidad, el bienestar y la participación activa.
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 Estos pilares sintetizan el enfoque integral que debe orientar el cuidado. No se trata únicamente de suplir necesidades básicas, sino de proteger los derechos, respetar la dignidad humana, promover condiciones de bienestar y favorecer la participación de la persona mayor en las decisiones que afectan su vida.
         p.mt-4.mb-0(data-aos="fade-left") Comprender este marco normativo permite al cuidador ejercer su labor con claridad ética y respaldo legal, asegurando que cada intervención contribuya al respeto, la autonomía y la calidad de vida de la persona mayor.
 
@@ -77,7 +77,8 @@
 
     .row.justify-content-center.mt-4
       .col-lg-10
-        p.mb-0(data-aos="fade-up") Estos artículos constituyen el marco jurídico que orienta las acciones relacionadas con el cuidado de la persona mayor. No se trata únicamente de atender necesidades básicas, sino de garantizar el respeto por los derechos fundamentales, promover la autonomía y prevenir cualquier forma de vulneración.
+        .cajon.color-1.p-4(data-aos="fade-up")
+          p.mb-0 Estos artículos constituyen el marco jurídico que orienta las acciones relacionadas con el cuidado de la persona mayor. No se trata únicamente de atender necesidades básicas, sino de garantizar el respeto por los derechos fundamentales, promover la autonomía y prevenir cualquier forma de vulneración.
 
     p.mt-4(data-aos="fade-right") En este contexto, el cuidador cumple un papel fundamental al materializar estos principios en su práctica diaria, actuando con respeto, protegiendo la integridad y favoreciendo la participación de la persona mayor en las decisiones relacionadas con su cuidado.
 
@@ -170,7 +171,7 @@
           img(src="@/assets/curso/temas/t1/comp-3.png").w-100
       .col-lg-8
         p(data-aos="fade-left") La atención a la persona mayor requiere la aplicación de guías y protocolos que orienten las acciones del cuidador, garantizando prácticas seguras, organizadas y acordes con los lineamientos establecidos en el sector salud y social. Estos instrumentos permiten estandarizar los procesos de cuidado, reducir riesgos y asegurar una atención centrada en la persona.
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 Las guías corresponden a orientaciones técnicas basadas en evidencia que apoyan la toma de decisiones en el cuidado, mientras que los protocolos establecen procedimientos específicos para la ejecución de actividades.
         p.mt-4.mb-0(data-aos="fade-left") Las guías y protocolos pueden ser emitidos por diferentes actores, los cuales cumplen funciones complementarias:
 

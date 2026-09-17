@@ -15,7 +15,7 @@
         figure.mb-0
           img(src="@/assets/curso/temas/t5/comp-1.png").w-100
       .col-lg-7
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 En esta etapa de la vida también es frecuente la presencia simultánea de varias enfermedades, situación conocida como multimorbilidad, que puede aumentar la complejidad del cuidado y favorecer la aparición de riesgos asociados al tratamiento y al deterioro funcional.
         p.mt-4.mb-0(data-aos="fade-left") Para el cuidador, conocer las enfermedades más frecuentes no significa realizar diagnósticos ni modificar tratamientos. Su función consiste en observar cambios en el estado de la persona mayor, reconocer señales de alerta, apoyar las indicaciones establecidas por los profesionales de salud y adaptar las actividades de cuidado de acuerdo con sus necesidades y nivel de dependencia.
 
@@ -29,7 +29,7 @@
 
     .row.justify-content-center.mt-4
       .col-auto
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.mb-0 Es importante tener en cuenta que:
 
     //- Banda de 1328x403 con la composición del corazón de 403x393 y las tarjetas #FFFCEC:
@@ -118,7 +118,7 @@
 
     .row.mt-4
       .col-lg-7.mb-4.mb-lg-0
-        .bg-1-vc.p-4(data-aos="fade-right")
+        .cajon.color-1.p-4(data-aos="fade-right")
           p.mb-0 Cuando se presenten cambios repentinos o señales de alerta, como dificultad para respirar, dolor intenso, alteraciones de la conciencia o la orientación, debilidad marcada, caídas, lesiones o cambios importantes en el comportamiento, debe informar oportunamente y solicitar la atención correspondiente, de acuerdo con los protocolos establecidos.
         p.mt-4.mb-0(data-aos="fade-right") El cuidado debe ser proporcional a las capacidades de la persona mayor. Siempre que sea posible, se debe favorecer su participación en las actividades que pueda realizar de manera segura, evitando sustituir innecesariamente sus capacidades. De esta manera, el cuidador contribuye a preservar la autonomía, la dignidad y la calidad de vida de la persona mayor.
       .col-lg-5
@@ -192,7 +192,7 @@
 
     .row.justify-content-center.mt-4
       .col-auto
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.mb-0 Durante el cuidado es importante:
 
     .banda-t5-2.mt-4
@@ -223,7 +223,7 @@
             .bg-3-vc.p-3
               p.mb-0 La vacunación también constituye una medida importante para prevenir algunas enfermedades transmisibles. El cuidador puede contribuir al cumplimiento del esquema de vacunación vigente y facilitar el acceso a los servicios de salud cuando corresponda.
         p.mt-4(data-aos="fade-right") Es importante recordar que el cuidador no diagnostica la infección ni modifica por cuenta propia los medicamentos o tratamientos. Su responsabilidad consiste en aplicar las medidas de protección correspondientes, brindar el apoyo requerido, observar los cambios en el estado de la persona y comunicar oportunamente cualquier situación relevante.
-        .bg-1-vc.p-4(data-aos="fade-right")
+        .cajon.color-1.p-4(data-aos="fade-right")
           p.mb-0 Ante signos como dificultad para respirar, alteraciones repentinas de la conciencia o la orientación, debilidad marcada, vómitos o diarrea persistentes, signos de deshidratación, fiebre u otros cambios importantes, se debe solicitar valoración por parte del personal de salud de acuerdo con los protocolos establecidos.
       .col-lg-4
         figure.mb-0
