@@ -41,7 +41,7 @@
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 El autocuidado puede favorecerse mediante acciones como:
 
     .banda-t10.mt-4
@@ -114,7 +114,7 @@
           img(src="@/assets/curso/temas/t10/ilus-2.png").w-100.h-100.object-fit-cover
       .col-lg-8
         .bg-2-vc.p-4.h-100(data-aos="fade-left")
-          ol.lista-ol--cuadro.mb-0
+          ol.lista-ol--cuadro.lista-ol--separador.mb-0
             li
               .lista-ol--cuadro__vineta
                 span 1
@@ -135,7 +135,7 @@
     .row.align-items-stretch.mt-4
       .col-lg-8.mb-4.mb-lg-0
         .bg-2-vc.p-4.h-100(data-aos="fade-right")
-          ol.lista-ol--cuadro.mb-0
+          ol.lista-ol--cuadro.lista-ol--separador.mb-0
             li
               .lista-ol--cuadro__vineta
                 span 5

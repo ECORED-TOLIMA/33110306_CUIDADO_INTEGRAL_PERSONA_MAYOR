@@ -71,7 +71,7 @@
 
     //- Caja #E2EAFF de 812x362 con la etiqueta #FEE85B y el icono de 80; el panel #F3F9FF de
     //- 415x362 con la ilustración va a su derecha.
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-8.mb-4.mb-lg-0
         .bg-2-vc.p-4.h-100(data-aos="fade-right")
           .row.mb-3
@@ -101,7 +101,7 @@
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 Durante la revisión del hogar se deben considerar los siguientes criterios:
 
     .banda-t6.mt-4

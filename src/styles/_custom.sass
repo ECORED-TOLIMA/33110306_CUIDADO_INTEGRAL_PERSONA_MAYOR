@@ -1,4 +1,5 @@
 @use 'variables' as *
+@use 'sass:color'
 // Los distintivos van anclados a la ILUSTRACIÓN, no a la columna: el kit los pone en absoluto
 // contra la columna, que es más ancha y más alta, y así no hay forma de sujetarlos.
 //
@@ -34,12 +35,16 @@
     top: 72.2%
     width: calc((100% - 3rem) * 0.258)
 
+// El flotado va HACIA ARRIBA, nunca hacia abajo. Bajando 20 px desde su sitio, el distintivo
+// inferior se salía del fondo del banner: en el XD queda dentro por los pelos (su base en 630
+// dentro de una ilustración que acaba en 636), así que cualquier desplazamiento hacia abajo lo
+// saca. Hallazgo 1 del revisor: «la imagen decorativa inferior con su efecto se sale del fondo».
 @keyframes float1
   0%
-    transform: translateY(20px)
+    transform: translateY(0px)
 
   100%
-    transform: translateY(0px)
+    transform: translateY(-20px)
 
 // El ancho de la columna del texto lo fija el `frame.width` del párrafo del XD: 490 px dentro de
 // una tarjeta de 1328. Con el 58,33 % del scaffold rompía a 710 y el titular cabía en dos líneas
@@ -433,3 +438,69 @@ figcaption
     background: url(../assets/curso/temas/t11/vin.svg) no-repeat center / contain
 .r-16
   border-radius: 16px !important
+
+// El numeral del tema va en el azul del texto (#12263F), NO en blanco. `textColor()` del kit
+// decide el contraste sola y sobre el amarillo #FEE85B devuelve blanco; el XD lo pinta
+// siempre en `#12263F`, que es el mismo color del cuerpo de texto. Hallazgo 2 del revisor.
+.titulo-principal.color-acento-contenido
+  .titulo-principal__numero
+    span
+      color: $color-sistema-texto
+
+// La flecha del contador «1/5» de los slyder B/C/D/E. El kit la deja gris (#E8E8E8 con el
+// chevron en el azul del texto); el XD la pinta de 30x30 en `#9E0909` con el chevron blanco
+// —medido en el PDF, x 564-593 / y 1744-1773 de la página 9—. Mismo tamaño, sólo el color.
+.slyder__btn
+  background-color: $color-acento-botones
+  color: #FFFFFF
+  &:hover
+    background-color: color.adjust($color-acento-botones, $lightness: -8%)
+
+// El XD dibuja tras la introducción una banda decorativa de 1600x222 pegada justo bajo la barra
+// superior (y=70), con las mismas formas beige de la portada. La clase `.introduccion` estaba
+// puesta en la vista desde el primer día y NUNCA definida: una clase que nadie define no da
+// error, se pierde el diseño en silencio. Se exporta por GRUPO (`Enmascarar grupo 1119206`);
+// con `--rect` el recorte se llevaría el texto del curso dentro del PNG.
+.introduccion
+  background-image: url(../assets/curso/intro/banda-1.png)
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: 100% auto
+
+// El kit pone `* { display: inline }` dentro de `.bloque-texto-g__texto` (para que el texto
+// envuelva a la imagen flotada), y eso pega los párrafos en una sola tirada: en el tema 2 se
+// leía «…sus estilos de vida.Comprender el envejecimiento…». En este curso el XD dibuja la
+// caja de texto AL LADO de la foto, no envolviéndola, y dentro van párrafos separados.
+.bloque-texto-g__texto
+  p
+    display: block
+
+// El dígito de la viñeta cuadrada va en NEGRO. El kit lo pone en `$white` sobre el amarillo
+// `#FEE85B` y en el XD es siempre `#12263F`, el mismo del cuerpo de texto — es el mismo error
+// que el numeral del título del tema. Hallazgo 42 del revisor: «viñetas de numerales deben ser
+// negras».
+.lista-ol--cuadro__vineta
+  color: $color-sistema-texto
+
+// Tarjetas con `:hover`. El revisor (hallazgos 12 y 35) pide que cambien de color al pasar el
+// ratón, y el XD lo respalda: en el 9.1 dibuja las MISMAS cuatro tarjetas dos veces, en rosa
+// con el disco `#9E0909` y en azul con el disco `#080F71`. El segundo juego es el estado
+// activo. El borde azul que se ve en su captura del 3.2 NO es del diseño: es la marca de
+// selección de Adobe XD (no hay ningún trazo azul ni en la mesa ni en el pasteboard).
+.tarjeta-hover
+  transition: background-color .25s ease, transform .25s ease
+  &:hover
+    transform: translateY(-4px)
+  &.a-2-vc:hover
+    background-color: $color-2-vc
+  &.a-4-vc:hover
+    background-color: $color-4-vc
+
+// `_template.sass` pone `overflow-x: hidden` al `.container` del curso. En CSS, si un eje deja
+// de ser `visible` el otro pasa de `visible` a `auto` SOLO: la tarjeta acababa con
+// `overflow: hidden auto` y, en cuanto la ventana era más baja que el contenido, salía una
+// SEGUNDA barra de scroll dentro de la tarjeta. Hallazgo 43 del revisor. `clip` recorta igual
+// en horizontal pero no crea contenedor de scroll en ninguno de los dos ejes.
+.curso-main-container
+  > .container
+    overflow: clip

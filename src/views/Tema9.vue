@@ -13,7 +13,7 @@
           img(src="@/assets/curso/temas/t9/comp-1.png").w-100
       .col-lg-7
         p(data-aos="fade-left") El lavado de manos es una medida fundamental para prevenir la transmisión de microorganismos durante las actividades de cuidado. Las manos pueden entrar en contacto con personas, superficies, objetos y diferentes materiales, por lo que una higiene adecuada permite reducir la posibilidad de llevar microorganismos de un lugar a otro.
-        .bg-1-vc.p-4(data-aos="fade-left")
+        .cajon.color-1.p-4(data-aos="fade-left")
           p.mb-0 En el cuidado de la persona mayor, la higiene de manos debe incorporarse de manera habitual antes, durante y después de determinadas actividades, especialmente cuando existe contacto directo con la persona, sus pertenencias, alimentos, medicamentos, secreciones o elementos utilizados durante la higiene. La aplicación correcta de esta medida contribuye a proteger tanto a la persona mayor como al cuidador.
 
     separador
@@ -23,12 +23,12 @@
     p.mt-4(data-aos="fade-right") La higiene de manos es una de las medidas más importantes para interrumpir la transmisión de microorganismos. Su importancia radica en que permite eliminar o reducir la contaminación presente en las manos y disminuir el riesgo de transmitir agentes infecciosos durante las actividades cotidianas de cuidado.
 
     //- Caja #E2EAFF con la lista numerada de viñeta amarilla y la ilustración de 222x329 al lado.
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-9.mb-4.mb-lg-0
         .bg-2-vc.p-4.h-100(data-aos="fade-right")
           p.mb-3
             b Su aplicación adecuada permite:
-          ol.lista-ol--cuadro.mb-0
+          ol.lista-ol--cuadro.lista-ol--separador.mb-0
             li
               .lista-ol--cuadro__vineta
                 span 1
@@ -75,33 +75,33 @@
 
     .row.mt-4
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .bg-4-vc.r-10.p-4.h-100(data-aos="fade-up")
+        .bg-4-vc.tarjeta-hover.a-2-vc.r-10.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t9/ele-1.svg" style="width: 128px").m-auto
+            img(src="@/assets/curso/temas/t9/ele-1.png" style="width: 128px").m-auto
           p.text-center.mb-0
             b Agua
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .bg-4-vc.r-10.p-4.h-100(data-aos="fade-up")
+        .bg-4-vc.tarjeta-hover.a-2-vc.r-10.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t9/ele-2.svg" style="width: 128px").m-auto
+            img(src="@/assets/curso/temas/t9/ele-2.png" style="width: 128px").m-auto
           p.text-center.mb-0
             b Jabón
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .bg-4-vc.r-10.p-4.h-100(data-aos="fade-up")
+        .bg-4-vc.tarjeta-hover.a-2-vc.r-10.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t9/ele-3.svg" style="width: 128px").m-auto
+            img(src="@/assets/curso/temas/t9/ele-3.png" style="width: 128px").m-auto
           p.text-center.mb-0
             b Toalla limpia o medio adecuado para el secado
       .col-md-6.col-lg-3
-        .bg-4-vc.r-10.p-4.h-100(data-aos="fade-up")
+        .bg-4-vc.tarjeta-hover.a-2-vc.r-10.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t9/ele-4.svg" style="width: 128px").m-auto
+            img(src="@/assets/curso/temas/t9/ele-4.png" style="width: 128px").m-auto
           p.text-center.mb-0
             b Recipiente para residuos, cuando corresponda
 
     .row.justify-content-center.mt-4
       .col-lg-6
-        .bg-3.r-20.px-4.py-2(data-aos="fade-up")
+        .bg-3-v.r-20.px-4.py-2(data-aos="fade-up")
           p.text-center.mb-0 La técnica debe realizarse de manera ordenada:
 
     .banda-t9.mt-4

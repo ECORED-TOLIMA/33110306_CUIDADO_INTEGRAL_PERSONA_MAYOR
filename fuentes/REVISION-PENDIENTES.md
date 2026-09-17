@@ -33,3 +33,23 @@ quedan a la espera de un material que todavía no llegó.
    son distintas y todas las personas salen de este `.xd` (tiene trece recortes sobre fondo
    transparente en `resources/`), así que no se tomó nada de otro entregable.
 
+
+## Validación de hallazgos del revisor (`fuentes/VALIDACION-HALLAZGOS.docx`, 2026-09-17)
+
+**6. El «borde de colores» de las tarjetas del 3.2 (hallazgo 12).** El hallazgo pide «los bordes
+de los colores solicitados» y su captura del XD muestra un contorno azul en la primera tarjeta.
+Ese contorno **no está en el diseño**: no hay ningún trazo azul ni en la mesa de trabajo ni en
+el pasteboard (comprobado nodo a nodo). Es la marca de selección de Adobe XD sobre el objeto
+que el revisor tenía seleccionado al capturar. Se implementa lo que el hallazgo sí dice de
+forma explícita —«cuando se pase el mouse encima cambien de color»— y las tarjetas pasan al
+azul `#E2EAFF` en `:hover`, que es el segundo juego de colores que el XD dibuja en el 9.1.
+**Si el diseño quería además un borde, hace falta que lo dibuje.**
+
+**7. El icono en `:hover` (hallazgos 12 y 35).** En el 9.1 el XD dibuja las cuatro tarjetas dos
+veces: rosa con el disco `#9E0909` y azul con el disco `#080F71`. La tarjeta cambia de color al
+pasar el ratón, pero **el disco del icono sigue en rojo**: el icono va en un PNG y cambiarlo
+pediría un segundo juego de imágenes por tarjeta. Queda anotado por si el cliente lo exige.
+
+**8. La numeración y las viñetas.** El kit decide el contraste solo (`textColor()`) y sobre el
+amarillo `#FEE85B` devuelve blanco; el XD las pinta siempre en `#12263F`. Corregido para el
+numeral del tema y para la viñeta cuadrada de las listas numeradas.

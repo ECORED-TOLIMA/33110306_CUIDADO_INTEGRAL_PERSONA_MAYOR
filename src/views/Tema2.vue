@@ -22,7 +22,7 @@
       h2 2.1 Conceptos clave
 
     //- Caja #E2EAFF de 728x289 con el icono de 84 dentro y el panel #F3F9FF de 499x289 al lado.
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-7.mb-4.mb-lg-0
         .bg-2-vc.p-4.h-100(data-aos="fade-right")
           figure.mb-3

@@ -28,7 +28,7 @@
     //- Caja #F3E5D8 de 812x141 en (186,1198) y la composición de 416x287 en (1018,1198).
     .row.mt-4
       .col-lg-8.mb-4.mb-lg-0
-        .bg-1-vc.p-4(data-aos="fade-right")
+        .cajon.color-1.p-4(data-aos="fade-right")
           p.mb-0 La dependencia funcional no es una consecuencia inevitable del envejecimiento. Una persona mayor puede conservar un alto grado de autonomía y realizar por sí misma la mayoría de sus actividades, mientras que otra puede requerir diferentes niveles de apoyo debido a enfermedades, discapacidad, deterioro de algunas capacidades o situaciones relacionadas con su entorno.
         p.mt-4.mb-0(data-aos="fade-right") Para comprender la dependencia funcional es necesario diferenciarla de la autonomía y la independencia. La autonomía se relaciona con la capacidad de tomar decisiones sobre la propia vida y expresar preferencias, mientras que la independencia hace referencia a la posibilidad de realizar actividades cotidianas por cuenta propia. Una persona puede requerir apoyo para realizar una actividad y, al mismo tiempo, conservar su capacidad para tomar decisiones sobre cómo desea recibir dicho apoyo.
       .col-lg-4
@@ -78,21 +78,21 @@
     //- el círculo del icono de 116 dentro.
     .row.mt-4
       .col-md-6.col-lg-4.mb-4.mb-lg-0
-        .bg-4-vc.r-20.p-4.h-100(data-aos="fade-up")
+        .bg-4-vc.tarjeta-hover.a-2-vc.r-20.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t3/tipo-1.svg" style="width: 116px").m-auto
+            img(src="@/assets/curso/temas/t3/tipo-1.png" style="width: 116px").m-auto
           h4.text-center Dependencia física
           p.text-center.mb-0 Se relaciona con limitaciones en la fuerza, movilidad, equilibrio o coordinación que dificultan actividades como caminar, levantarse, bañarse, vestirse o desplazarse.
       .col-md-6.col-lg-4.mb-4.mb-lg-0
-        .bg-4-vc.r-20.p-4.h-100(data-aos="fade-up")
+        .bg-4-vc.tarjeta-hover.a-2-vc.r-20.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t3/tipo-2.svg" style="width: 116px").m-auto
+            img(src="@/assets/curso/temas/t3/tipo-2.png" style="width: 116px").m-auto
           h4.text-center Dependencia cognitiva
           p.text-center.mb-0 Se presenta cuando existen dificultades relacionadas con la memoria, la orientación, la atención, el juicio o la capacidad para comprender y responder adecuadamente a determinadas situaciones. Estas dificultades pueden afectar actividades como el manejo de medicamentos, la organización de tareas o la identificación de situaciones de riesgo.
       .col-md-6.col-lg-4
-        .bg-3-vc.r-20.p-4.h-100(data-aos="fade-up")
+        .bg-3-vc.tarjeta-hover.a-2-vc.r-20.p-4.h-100(data-aos="fade-up")
           figure.mb-3
-            img(src="@/assets/curso/temas/t3/tipo-3.svg" style="width: 116px").m-auto
+            img(src="@/assets/curso/temas/t3/tipo-3.png" style="width: 116px").m-auto
           h4.text-center Dependencia sensorial
           p.text-center.mb-0 Está relacionada con limitaciones importantes de la visión, la audición u otras capacidades sensoriales que pueden dificultar la comunicación, la movilidad y la interacción segura con el entorno.
 
