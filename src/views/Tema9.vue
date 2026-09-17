@@ -148,7 +148,7 @@
           .row.align-items-center
             .col-12.col-md-auto.mb-3.mb-md-0
               figure.mb-0
-                img(src="@/assets/curso/temas/t9/ic-2.svg" style="width: 84px")
+                img(src="@/assets/curso/temas/t9/ic-2.png" style="width: 84px")
             .col
               h4.mb-2 ¿Cómo lavarse las manos de una forma segura?
               p.mb-0 Para complementar los pasos descritos y facilitar la comprensión de la técnica, acceda al siguiente video, en el que se presenta de manera gráfica la secuencia adecuada para el lavado de manos:
@@ -166,7 +166,7 @@
         .row.align-items-center(data-aos="fade-right")
           .col-12.col-md-auto.mb-3.mb-md-0
             figure.mb-0
-              img(src="@/assets/curso/temas/t9/ic-2.svg" style="width: 84px")
+              img(src="@/assets/curso/temas/t9/ic-3.png" style="width: 84px")
           .col
             .bg-3-vc.p-3
               p.mb-0 El uso de guantes no elimina la necesidad de realizar higiene de manos. Los guantes son una medida complementaria y deben utilizarse de acuerdo con el riesgo identificado durante la actividad de cuidado.

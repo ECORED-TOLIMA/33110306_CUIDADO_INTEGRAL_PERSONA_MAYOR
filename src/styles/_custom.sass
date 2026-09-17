@@ -71,7 +71,7 @@
 .banner-interno__titulo h5, .banner-interno__titulo h6
   color: $color-sistema-texto !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: $white !important
+  color: $color-sistema-texto !important   // el XD lo pinta en #12263F, NO en blanco
 figcaption 
     font-weight: normal !important
 
@@ -269,6 +269,12 @@ figcaption
   // El XD fija la tarjeta en 396x313 (foto 247 + franja 66). Sin el alto, la definición más
   // larga estira su tarjeta y las franjas de una misma fila dejan de alinearse.
   height: 313px
+  // ⚠️ El `height: 100%` del contenido no servía de nada: su padre `__contenedor` no tiene
+  // altura, así que el contenido se quedaba en 234 px de los 313 de la tarjeta y el `h4` —que
+  // con `column-reverse` va al fondo— caía DETRÁS de la foto. Se veía la franja rosa vacía,
+  // sin el término ni la flecha. Hallazgo 9 del revisor, «recurso no corresponde».
+  .tarjeta-slide__contenedor
+    height: 100%
   .tarjeta-slide__contenido
     background-color: $color-4-vc
     height: 100%
@@ -278,7 +284,11 @@ figcaption
     flex-direction: column-reverse
     justify-content: flex-start
     h4
-      margin-bottom: 0
+      // La franja del XD son 66 px pegados AL BORDE de la tarjeta (247..313). El `.p-4` del
+      // contenido la subía 24 px y el término quedaba medio tapado por la foto, así que el
+      // `h4` se sale del padding con margen negativo y lo recupera como padding propio.
+      margin: 0 -1.5rem -1.5rem
+      padding: 0 1.5rem
       min-height: 66px
       display: flex
       align-items: center
@@ -439,13 +449,9 @@ figcaption
 .r-16
   border-radius: 16px !important
 
-// El numeral del tema va en el azul del texto (#12263F), NO en blanco. `textColor()` del kit
-// decide el contraste sola y sobre el amarillo #FEE85B devuelve blanco; el XD lo pinta
-// siempre en `#12263F`, que es el mismo color del cuerpo de texto. Hallazgo 2 del revisor.
-.titulo-principal.color-acento-contenido
-  .titulo-principal__numero
-    span
-      color: $color-sistema-texto
+// ⚠️ El numeral del tema se arregla ARRIBA, en la regla que ya tenía `!important`. Añadir aquí
+// una regla sin `!important` no sirve de nada aunque venga después: pierde igual. Me pasó —
+// «color de la numeración debe ser negro» siguió en verde en la segunda revisión.
 
 // La flecha del contador «1/5» de los slyder B/C/D/E. El kit la deja gris (#E8E8E8 con el
 // chevron en el azul del texto); el XD la pinta de 30x30 en `#9E0909` con el chevron blanco
@@ -504,3 +510,29 @@ figcaption
 .curso-main-container
   > .container
     overflow: clip
+
+// Las viñetas de `.lista-ul` son un punto de ~5 px en el XD, no el círculo a cuerpo de texto
+// que pinta `fa-circle`: el revisor lo llamó «iconos de mayor volumen» (hallazgo 10). Y la
+// segunda línea de un ítem largo tiene que alinear con el texto, no volver al margen de la
+// viñeta — por eso el sangrado francés.
+.lista-ul li
+  padding-left: 1.5em
+  text-indent: -1.5em
+  > i.fa-circle:first-of-type
+    font-size: .34em
+    vertical-align: middle
+    margin-right: 1.3em
+    top: -.15em
+
+// Los subtítulos «a)» / «b)» del 11.6 no son texto suelto: el XD los dibuja como una PASTILLA
+// de `#FEF79D` con las esquinas redondeadas, medida en el PDF (254,247,157 a lo largo de toda
+// la línea). Hallazgos 51 y 53, «subtítulo diferente a lo solicitado en el diseño».
+.titulo-cuarto.color-acento-contenido
+  h4
+    display: inline-flex
+    align-items: center
+    gap: .6rem
+    background-color: $color-3-v
+    border-radius: 999px
+    padding: .5rem 1.4rem
+    margin-bottom: 0

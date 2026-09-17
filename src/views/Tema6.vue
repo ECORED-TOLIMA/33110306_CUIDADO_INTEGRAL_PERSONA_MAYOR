@@ -7,20 +7,24 @@
         span 6
       h1 Ambientes seguros para el cuidado
 
-    //- Foto de 506x371 en (186,297) y la columna de texto a su derecha, sobre la franja #F3E5D8.
-    .row.mt-4
+    //- Foto de 506x371 en (186,297) y la columna de texto a su derecha, SOBRE LA FRANJA
+    //- #F3E5D8 — eso lo tenía escrito en el comentario y nunca lo maqueté: la columna salía
+    //- sobre el blanco de la tarjeta. Hallazgo 23, «la información de la parte derecha debe
+    //- ir con fondo». Y van pegadas: el XD no deja hueco entre la foto y la franja.
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-5.mb-4.mb-lg-0
-        figure.mb-0
-          img(src="@/assets/curso/temas/t6/foto-1.png").w-100
+        figure.mb-0.h-100
+          img(src="@/assets/curso/temas/t6/foto-1.png").w-100.h-100.object-fit-cover
       .col-lg-7
-        p(data-aos="fade-left") El entorno donde vive y realiza sus actividades la persona mayor influye directamente en su seguridad, autonomía y calidad de vida. Los cambios relacionados con la movilidad, la fuerza muscular, la visión, el equilibrio o las capacidades cognitivas pueden aumentar la posibilidad de accidentes cuando el espacio no responde a sus necesidades.
-        .row.align-items-start(data-aos="fade-left")
-          .col-12.col-md-auto.mb-3.mb-md-0
-            figure.mb-0
-              img(src="@/assets/curso/temas/t6/ic-1.svg" style="width: 80px")
-          .col
-            p.mb-0 Un ambiente seguro no consiste únicamente en mantener el lugar limpio y ordenado. También implica identificar riesgos, facilitar el desplazamiento, disponer los objetos de manera accesible y realizar los ajustes necesarios de acuerdo con las capacidades y el nivel de dependencia de la persona mayor.
-        p.mt-4.mb-0(data-aos="fade-left") La adecuación del entorno debe favorecer la independencia y la participación, evitando limitar innecesariamente la movilidad. Para ello, es importante observar cómo la persona se desplaza, utiliza los espacios y realiza sus actividades cotidianas.
+        .bg-1-vc.p-4.h-100
+          p(data-aos="fade-left") El entorno donde vive y realiza sus actividades la persona mayor influye directamente en su seguridad, autonomía y calidad de vida. Los cambios relacionados con la movilidad, la fuerza muscular, la visión, el equilibrio o las capacidades cognitivas pueden aumentar la posibilidad de accidentes cuando el espacio no responde a sus necesidades.
+          .row.align-items-start(data-aos="fade-left")
+            .col-12.col-md-auto.mb-3.mb-md-0
+              figure.mb-0
+                img(src="@/assets/curso/temas/t6/ic-1.svg" style="width: 80px")
+            .col
+              p.mb-0 Un ambiente seguro no consiste únicamente en mantener el lugar limpio y ordenado. También implica identificar riesgos, facilitar el desplazamiento, disponer los objetos de manera accesible y realizar los ajustes necesarios de acuerdo con las capacidades y el nivel de dependencia de la persona mayor.
+          p.mt-4.mb-0(data-aos="fade-left") La adecuación del entorno debe favorecer la independencia y la participación, evitando limitar innecesariamente la movilidad. Para ello, es importante observar cómo la persona se desplaza, utiliza los espacios y realiza sus actividades cotidianas.
 
     separador
     #t_6_1.titulo-segundo.color-acento-contenido

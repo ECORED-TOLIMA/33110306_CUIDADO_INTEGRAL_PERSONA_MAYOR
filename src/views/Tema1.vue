@@ -136,16 +136,20 @@
           SlyderF.slyder--flechas(columnas="col-md-6 col-lg-6")
             .tarjeta.bg-3-vc.r-20.p-4.h-100
               figure.mb-3
-                img(src="@/assets/curso/temas/t1/comp-ic-1.svg" style="width: 96px").m-auto
+                img(src="@/assets/curso/temas/t1/comp-ic-1.png" style="width: 96px").m-auto
               p.text-center.mb-0 Se promueve el envejecimiento activo, enfocado en mantener la funcionalidad e independencia el mayor tiempo posible.
             .tarjeta.bg-3-vc.r-20.p-4.h-100
               figure.mb-3
-                img(src="@/assets/curso/temas/t1/comp-ic-2.svg" style="width: 96px").m-auto
+                img(src="@/assets/curso/temas/t1/comp-ic-2.png" style="width: 96px").m-auto
               p.text-center.mb-0 Se fortalece la protección social integral, garantizando el acceso a servicios de salud, seguridad social y condiciones básicas de bienestar.
             .tarjeta.bg-3-vc.r-20.p-4.h-100
               figure.mb-3
-                img(src="@/assets/curso/temas/t1/comp-ic-3.svg" style="width: 96px").m-auto
+                img(src="@/assets/curso/temas/t1/comp-ic-3.png" style="width: 96px").m-auto
               p.text-center.mb-0 Se impulsa la participación e inclusión social, favoreciendo la integración comunitaria y el reconocimiento del rol de la persona mayor.
+            .tarjeta.bg-3-vc.r-20.p-4.h-100
+              figure.mb-3
+                img(src="@/assets/curso/temas/t1/comp-ic-4.png" style="width: 96px").m-auto
+              p.text-center.mb-0 Se desarrollan entornos protectores y seguros, orientados a prevenir riesgos físicos, sociales y ambientales.
 
     p.mt-4(data-aos="fade-right") Estos componentes refuerzan la corresponsabilidad entre el Estado, la sociedad y la familia, y orientan el cuidado hacia el respeto por la dignidad humana, la participación y la seguridad.
 
@@ -215,8 +219,10 @@
     p.mt-4(data-aos="fade-right") El reconocimiento de los derechos de la persona mayor implica, de manera directa, responsabilidades para quienes ejercen funciones de cuidado. En el contexto colombiano, el cuidador, ya sea familiar o formal, no solo desempeña una labor asistencial, sino que asume un compromiso ético, social y legal orientado a garantizar la protección, la dignidad y el bienestar.
 
     //- Franja #754114 de 919x350 con la caja blanca de 685x262 y la foto de 614x350 saliéndose
-    //- por la izquierda: eso es `bloque-texto-g` con `--inverso`.
-    .bloque-texto-g.color-1-vo.bloque-texto-g--inverso.p-3.p-sm-4.p-md-5.mt-4(data-aos="fade-up")
+    //- La foto va a la IZQUIERDA y la caja de texto a la derecha, que es el `bloque-texto-g`
+    //- por defecto. Yo le puse `--inverso`, que es justo al revés: hallazgo 7 del revisor,
+    //- «el bloque del texto no corresponde al solicitado por el diseño».
+    .bloque-texto-g.color-1-vo.p-3.p-sm-4.p-md-5.mt-4(data-aos="fade-up")
       .bloque-texto-g__img(:style="{ backgroundImage: `url(${require_src('@/assets/curso/temas/t1/foto-3.png')})` }")
       .bloque-texto-g__texto.p-4
         p La Ley 1251 de 2008 establece medidas para la protección, promoción y defensa de los derechos de la persona mayor, destacando la corresponsabilidad entre el Estado, la sociedad y la familia en la garantía de condiciones adecuadas de vida. Esta norma refuerza la obligación de brindar un trato digno y de prevenir cualquier forma de abandono, negligencia o maltrato.

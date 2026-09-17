@@ -16,11 +16,13 @@
     .row.justify-content-center.mt-4
       .col-lg-9
         .row.align-items-center(data-aos="fade-right")
+          //- El XD lo dibuja como un BOCADILLO: el bloque azul del icono con las esquinas
+          //- redondeadas y el panel en `#EED2B9` (primario), no en `#F3E5D8`. Hallazgo 39.
           .col-12.col-md-auto.mb-3.mb-md-0
             figure.mb-0
-              img(src="@/assets/curso/temas/t10/ic-1.svg" style="width: 88px")
+              img(src="@/assets/curso/temas/t10/ic-1.svg" style="width: 88px").r-10
           .col
-            .bg-1-vc.p-4
+            .bg-1.r-20.p-4
               p.mb-0 El bienestar comprende diferentes dimensiones que se relacionan entre sí. Además de atender las necesidades físicas, el cuidado debe considerar los aspectos emocionales, sociales y relacionados con la autonomía y la participación. Mantener vínculos significativos, participar en actividades acordes con las capacidades y tomar decisiones sobre aspectos de la vida cotidiana contribuye a preservar la autoestima, la funcionalidad y la calidad de vida.
 
     separador
@@ -91,7 +93,7 @@
       h2 10.2 Bienestar de la persona mayor y autocuidado del cuidador
 
     //- Caja #F3E5D8 de 728x341 con el icono de 80 dentro y la foto de 506x341 a la derecha.
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-7.mb-4.mb-lg-0
         .bg-1-vc.p-4.h-100(data-aos="fade-right")
           p El bienestar de la persona mayor no depende únicamente de la ausencia de enfermedad. También está relacionado con la posibilidad de sentirse respetada, escuchada, segura y partícipe de las decisiones que afectan su vida. Por esta razón, el cuidado debe favorecer espacios de comunicación, acompañamiento y participación social, de acuerdo con sus intereses y capacidades.
@@ -108,7 +110,7 @@
     p.mt-4(data-aos="fade-right") El autocuidado también es necesario para quien cuida. Las actividades de cuidado pueden implicar esfuerzo físico, emocional y organización del tiempo. Por ello, el cuidador debe reconocer sus propios límites y mantener prácticas que favorezcan su bienestar, entre ellas:
 
     //- Dos bloques #E2EAFF de 1228x266 con la ilustración de 396x266 alternando de lado.
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-4.mb-4.mb-lg-0
         figure.mb-0.h-100
           img(src="@/assets/curso/temas/t10/ilus-2.png").w-100.h-100.object-fit-cover
@@ -132,7 +134,7 @@
                 span 4
               | Organizar las actividades de cuidado y establecer prioridades.
 
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-8.mb-4.mb-lg-0
         .bg-2-vc.p-4.h-100(data-aos="fade-right")
           ol.lista-ol--cuadro.lista-ol--separador.mb-0

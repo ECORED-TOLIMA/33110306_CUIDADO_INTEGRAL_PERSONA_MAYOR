@@ -130,7 +130,7 @@
     #t_11_2.titulo-segundo.color-acento-contenido
       h2 11.2 Dieta balanceada
 
-    .row.align-items-stretch.mt-4
+    .row.align-items-stretch.g-0.mt-4
       .col-lg-7.mb-4.mb-lg-0
         .bg-1-vc.p-4.h-100(data-aos="fade-right")
           p Una dieta balanceada proporciona al organismo una variedad de alimentos y nutrientes en cantidades adecuadas para contribuir al mantenimiento de la salud, la funcionalidad y el bienestar. En la persona mayor, la alimentación debe adaptarse a sus características individuales, teniendo en cuenta su estado de salud, nivel de actividad, necesidades nutricionales, hábitos alimentarios, preferencias y capacidad para masticar y deglutir.
@@ -564,7 +564,8 @@
 
     .row.justify-content-center.mt-4
       .col-lg-10
-        .bg-2-vc.p-4(data-aos="fade-up")
+        //- El panel va en `#C7D0FE` (secundario), medido en el PDF; yo puse `#E2EAFF`.
+        .bg-2.p-4(data-aos="fade-up")
           p.mb-3
             b Para favorecer su participación se pueden considerar:
           ul.lista-ul.lista-ul--vineta-t11.mb-0
@@ -575,13 +576,15 @@
             li Brindar ayuda únicamente en las acciones que requieran apoyo.
             li.mb-0 Respetar el ritmo de alimentación y evitar apresurar el proceso.
 
-    .row.justify-content-end.mt-4
-      .col-lg-6
-        p.mb-0(data-aos="fade-left") La asistencia en la alimentación debe combinar seguridad, comodidad y autonomía. El cuidador debe revisar las capacidades de la persona, proporcionar el apoyo necesario y comunicar cualquier dificultad que pueda afectar su alimentación.
-
-    .row.justify-content-end.mt-4
+    //- El XD acompaña estos dos bloques con la foto de 486x229 en (193,11950) a la izquierda.
+    //- Faltaba entera. Hallazgo 53 del revisor, «faltan imágenes acompañantes en dos párrafos».
+    .row.mt-4
+      .col-lg-5.mb-4.mb-lg-0
+        figure.mb-0
+          img(src="@/assets/curso/temas/t11/foto-movil.png").w-100.r-10
       .col-lg-7
-        .cajon.color-1.p-4(data-aos="fade-up")
+        p(data-aos="fade-left") La asistencia en la alimentación debe combinar seguridad, comodidad y autonomía. El cuidador debe revisar las capacidades de la persona, proporcionar el apoyo necesario y comunicar cualquier dificultad que pueda afectar su alimentación.
+        .cajon.color-1.p-4.mt-4(data-aos="fade-up")
           p.mb-0 #[b Importante:] las modificaciones en la consistencia de los alimentos o líquidos, así como otras medidas específicas para las dificultades de deglución, deben seguir las indicaciones de los profesionales responsables. El cuidador no debe establecer estos cambios por iniciativa propia.
 
 </template>

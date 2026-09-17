@@ -136,14 +136,16 @@
         figure.mb-0
           img(src="@/assets/curso/temas/t5/ilus-3.png").w-100
       .col-lg-7
+        //- El icono y el tercer párrafo van DENTRO del panel del segundo, no debajo: el XD
+        //- los dibuja sobre el mismo #E2EAFF. Hallazgo 19 del revisor.
         .bg-2-vc.p-4(data-aos="fade-left")
-          p.mb-0 La persona mayor puede ser más vulnerable frente a algunas infecciones y, en determinados casos, estas pueden evolucionar rápidamente y afectar su estado general y su capacidad funcional. Además, una infección no siempre se manifiesta de la misma manera. En algunas personas mayores pueden aparecer cambios como debilidad, somnolencia o desorientación, incluso cuando otros síntomas habituales son leves o no están presentes.
-        .row.align-items-start.mt-4(data-aos="fade-left")
-          .col-12.col-md-auto.mb-3.mb-md-0
-            figure.mb-0
-              img(src="@/assets/curso/temas/t5/ic-1.svg" style="width: 84px")
-          .col
-            p.mb-0 Entre las enfermedades contagiosas que pueden presentarse con frecuencia se encuentran las infecciones respiratorias, urinarias, gastrointestinales y cutáneas. Algunas de ellas pueden estar relacionadas con las condiciones de higiene, el contacto con personas enfermas, la manipulación de alimentos o el cuidado inadecuado de heridas y lesiones en la piel.
+          p La persona mayor puede ser más vulnerable frente a algunas infecciones y, en determinados casos, estas pueden evolucionar rápidamente y afectar su estado general y su capacidad funcional. Además, una infección no siempre se manifiesta de la misma manera. En algunas personas mayores pueden aparecer cambios como debilidad, somnolencia o desorientación, incluso cuando otros síntomas habituales son leves o no están presentes.
+          .row.align-items-start.mt-4
+            .col-12.col-md-auto.mb-3.mb-md-0
+              figure.mb-0
+                img(src="@/assets/curso/temas/t5/ic-1.svg" style="width: 84px")
+            .col
+              p.mb-0 Entre las enfermedades contagiosas que pueden presentarse con frecuencia se encuentran las infecciones respiratorias, urinarias, gastrointestinales y cutáneas. Algunas de ellas pueden estar relacionadas con las condiciones de higiene, el contacto con personas enfermas, la manipulación de alimentos o el cuidado inadecuado de heridas y lesiones en la piel.
 
     .titulo-sexto.color-acento-contenido.mb-3.mt-4
       h5 Tabla 5.

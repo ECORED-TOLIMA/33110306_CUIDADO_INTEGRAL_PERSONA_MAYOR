@@ -53,3 +53,21 @@ pediría un segundo juego de imágenes por tarjeta. Queda anotado por si el clie
 **8. La numeración y las viñetas.** El kit decide el contraste solo (`textColor()`) y sobre el
 amarillo `#FEE85B` devuelve blanco; el XD las pinta siempre en `#12263F`. Corregido para el
 numeral del tema y para la viñeta cuadrada de las listas numeradas.
+
+## Segunda vuelta de validación (2026-09-17, tarde)
+
+El revisor marcó el `.docx` por colores: **amarillo = ajustado, verde = pendiente**. De los 53,
+26 quedaron ajustados y 25 pendientes. Los pendientes se atacan en esta entrega.
+
+**9. Lo que no se pudo cerrar y por qué.**
+
+- *«Bordes de color azul cortados» / «bordes redondos cortados» (hallazgos 14, 26, 34).* Los
+  anillos de los iconos y el radio de las tarjetas se recortan en el borde del carrusel, que
+  lleva `overflow: hidden` del propio kit (`ScrollHorizontal`). Quitarlo rompe el
+  desplazamiento. Queda para decidir con el diseñador: o se reduce el icono, o el carrusel
+  necesita un `padding` que el componente del kit no expone.
+- *«Información de tarjetas incompletas» (hallazgo 21) y «recurso no corresponde» (44, 49).*
+  No se identificó con certeza a qué bloque apuntan: sus capturas no muestran el título de la
+  sección. Hacen falta las coordenadas o el nombre del subtema.
+- *El icono en `:hover`* sigue como en la nota 7: la tarjeta cambia de color, el disco del
+  icono no.
